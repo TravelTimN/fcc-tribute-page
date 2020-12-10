@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Sigmar+One|Cantarell|Montserrat:900|Syncopate:700|Fascinate+Inline');
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #000000;
+    background: url("/images/expedition.jpg") top / cover no-repeat fixed;
+}
+
+#main {
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-areas:
+        "tribute-header"
+        "tribute-section"
+        "tribute-info"
+        "tribute-footer";
+}
+
+#tribute-header {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #262626;
+    height: 8vmax 5vmin;
+    width: 100%;
+    padding: 1.5em 0;
+    color: #FFFFFF;
+    text-shadow: 5px 5px 5px #000000;
+    font-family: "Syncopate", Verdana, sans-serif;
+    grid-area: tribute-header;
+}
+
+#title {
+    margin: 0 auto;
+    font-size: 4vmax;
+}
+
+#title-sub {
+    font-size: 2vmax;
+}
+
+#tribute-section {
+    grid-area: tribute-section;
+}
+
+figure {
+    align-self: center;
+    justify-items: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas:
+        ". image ."
+        ". img-caption .";
+}
+
+#image {
+    grid-area: image;
+    max-width: 60vw;
+    margin-top: 2em;
+    border-radius: 1em;
+    box-shadow: 1px 1px 25px 10px rgba(0, 0, 0, 0.75);
+}
+
+#img-caption {
+    grid-area: img-caption;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    max-width: 75vw;
+    color: #FFFFFF;
+    font-size: 1.5vmax;
+    font-weight: bold;
+    border-radius: 0.5em;
+    padding: 1em;
+    margin: 0.5em;
+    text-shadow: 2px 2px 2px #000000;
+    box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.75);
+}
+
+#tribute-info {
+    grid-area: tribute-info;
+    width: 100%;
+    border-top: 10px solid #262626;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+#tribute-info ul {
+    max-width: 75vw;
+}
+
+#timeline,
+#timeline-section {
+    text-transform: uppercase;
+    font-family: "Syncopate", Verdana, sans-serif;
+}
+
+#timeline-section {
+}
+
+li:hover {
+    background-color: #CCC;
+}
+
+#tribute-footer {
+    grid-area: tribute-footer;
+    color: rgb(151, 151, 151);
+    height: 100px;
+    background-color: #000000;
+}
